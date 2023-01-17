@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="shortcut icon" href="media/img/cross.png" type="image/x-icon" />
+    <title>Seongheon Hong</title>
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="headers"></div>
+  </body>
+  <!--------------------------------------------------------------------------------------------------------------->
+  <style>
+    #bar_home {
+      font-weight: bold;
+      text-decoration-line: none;
+    }
+  </style>
+
+  <body>
+    <div class="container">
+      <div class="row" style="padding: 15px 15px 0px 15px">
+        <div class="col-sm-9">
+          <h2>(Under Construction)</h2>
+          <h2>Seongheon Hong</h2>
+          <br />Undergraduate Student<br />
+          <a href="https://me.snu.ac.kr" target="_blank"
+            >Mechanical Engineering</a
+          >
+          and
+          <a href="https://ship.snu.ac.kr" target="_blank"
+            >Naval Architecture & Ocean Engineering</a
+          >
+          in
+          <a href="https://en.snu.ac.kr" target="_blank"
+            >Seoul National University</a
+          ><br />
+          <a href="https://github.com/seongheonhong/" target="_blank">GitHub</a> / 
+          <a id="cv_pdf" href="media/files/CV_Nov27.pdf" target="_blank">CV(PDF)</a> /           
+          E-mail : <a href="mailto:wbfprp@snu.ac.kr">wbfprp@snu.ac.kr</a><br />
+          <br />
+          <!--Research Interests : <i>Wearable Devices, Bio-Inspired Mechanisms, Biomechanics, Soft Robotics</i>-->
+          Hello. I am Seongheon Hong, undergraduate student at Seoul National University.<br />
+          I served as a <em>Goverment Issued Fire Fighter(GIFF)</em> from 2019
+          March to 2020 December (in replacement of mandatory military service). If you have any
+          questions or interested in my research, feel free to
+          <a href="mailto:wbfprp@snu.ac.kr">e-mail</a> me!          
+        </div>        
+        <div class="col-sm-3">
+          <img class="profile" src="media/img/profile_hsize.png" />
+        </div>
+      </div>
+      <br>
+      <hr style="border-top: 2px solid; opacity: 0.7" />
+
+      <h3>Honors and Awards</h3>
+      <div class="row" style="padding: 5px 15px 0px 15px">
+        <div class="col-sm-12">
+          <b>Gold Award, <a href="https://xcorpsplus.com/html/" target="_blank">X-Corps Plus Festival</a></b><br />          
+          Organized by <a href="https://www.msit.go.kr/eng/index.do" target="_blank">Korean Ministry of Science and ICT</a>
+        </div>
+      </div>
+      <div class="row" style="padding: 5px 15px 0px 15px">
+        <div class="col-sm-12">
+          <b>1st Prize Korea Autonomous Boat Competition</b><br />          
+          Organized by <a href="https://www.snak.or.kr/" target="_blank">The Society of Naval Architects of Korea</a>
+        </div>
+      </div>
+      <div class="row" style="padding: 5px 15px 0px 15px">
+        <div class="col-sm-12">
+          <b>The National Scholarship for Science and Engineering</b><br />
+          Funded by
+          <a href="https://www.kosaf.go.kr/eng/" target="_blank"
+            >Korean Student Aid Foundation</a>
+        </div>
+      </div>
+      <div class="row" style="padding: 5px 15px 0px 15px">
+        <div class="col-sm-12">
+          <b>Academic Excellent Scholarship</b><br />
+          Funded by <a href="https://en.snu.ac.kr/index.html" target="_blank"> Seoul National University</a> <br />
+        </div>
+      </div>
+      <hr style="border-top: 2px solid; opacity: 0.7" />
+
+      <h3>Patents and Copyrights</h3>
+      <div class="row" style="padding: 15px 15px 0px 15px">
+        <div class="col-sm-12">
+          <b>Strain sensor using piezo film with incision shape</b><br />
+          Y.G. Kim, S.H. Ahn, <b>Seongheon Hong</b>, KR-Application No.
+          10-2022-0065292, (<b>Pending</b>)
+        </div>
+      </div>
+
+      <hr style="border-top: 2px solid; opacity: 0.7" />
+      <footer>
+        <p>Last update: October 13, 2021</p>
+      </footer>
+    </div><!-- /container -->
+    
+    
+
+      
+    
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#headers").load("common/header.html");        
+      });
+      var hompageDomain = 'seongheonhong.github.io';
+      if (true){
+        const aList = document.getElementsByTagName("a");
+        for(aelem of aList){        
+          var ahref = aelem.href;
+          if (ahref.includes('/media/')){
+            var startIndex = ahref.lastIndexOf('/media/');
+            aelem.href = "https://" + hompageDomain + ahref.substr(startIndex);
+            console.log(aelem.href);
+          }        
+        }
+      }
+    </script>
+  </body>
+</html>
