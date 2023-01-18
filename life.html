@@ -125,19 +125,30 @@
         });
     </script>
     <script type="text/javascript">
-        var hompageDomain = 'seongheonhong.github.io';
-        if (true){
-          const aList = document.getElementsByTagName("a");
-          for(aelem of aList){        
+        var hompageDomain = "seongheonhong.github.io";
+        if (true) {
+          const aList = document.getElementsByTagName("a");        
+          var vidList = document.querySelectorAll('video, img');
+          
+          for (aelem of aList) {
             var ahref = aelem.href;
-            if (ahref.includes('/media/')){
-              var startIndex = ahref.lastIndexOf('/media/');
+            if (ahref.includes("/media/")) {
+              var startIndex = ahref.lastIndexOf("/media/");
               aelem.href = "https://" + hompageDomain + ahref.substr(startIndex);
               console.log(aelem.href);
-            }        
+            }
+          }
+  
+          for (videlem of vidList) {
+              var vidsrc = videlem.src;
+            if (vidsrc.includes("/media/")) {
+              var startIndex = vidsrc.lastIndexOf("/media/");
+              videlem.src = "https://" + hompageDomain + vidsrc.substr(startIndex);
+              console.log(videlem.src);
+            }
           }
         }
-      </script>
+    </script>
 </body>
 
 </html>
