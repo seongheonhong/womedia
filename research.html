@@ -102,6 +102,20 @@
         $("#headers").load("common/header.html");
         });
     </script>
+    <script type="text/javascript">
+        var hompageDomain = 'seongheonhong.github.io';
+        if (true){
+          const aList = document.getElementsByTagName("a");
+          for(aelem of aList){        
+            var ahref = aelem.href;
+            if (ahref.includes('/media/')){
+              var startIndex = ahref.lastIndexOf('/media/');
+              aelem.href = "https://" + hompageDomain + ahref.substr(startIndex);
+              console.log(aelem.href);
+            }        
+          }
+        }
+      </script>
 </body>
 
 </html>
